@@ -8,10 +8,20 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\LeaveManagement.Domain\LeaveManagement.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\LeaveAllocations\Handlers\Commands\" />
+    <Folder Include="Features\LeaveAllocations\Requests\Commands\" />
+    <Folder Include="Features\LeaveRequest\Handlers\Commands\" />
+    <Folder Include="Features\LeaveRequest\Requests\Commands\" />
+    <Folder Include="Features\LeaveTypes\Handlers\Commands\" />
+    <Folder Include="Features\LeaveTypes\Requests\Commands\" />
   </ItemGroup>
 
 </Project>
